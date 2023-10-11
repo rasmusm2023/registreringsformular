@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registreringsformulär Demostack.com</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img class="header-logo" src="assets/logo.webp" alt="Demostack Logo" />
+      <div class="menu-left">
+        <a href="#" class="menu-items">Platform</a>
+        <a href="#" class="menu-items">Solutions</a>
+        <a href="#" class="menu-items">Customers</a>
+        <a href="#" class="menu-items">Pricing</a>
+        <a href="#" class="menu-items">Resources</a>
+        <a href="#" class="menu-items">About</a>
+        <a href="#" class="menu-items">Demo HQ Day</a>
+      </div>
+
+      <div class="menu-right">
+        <a href="#" class="menu-items">Login</a>
+        <button class="CTA-button">Get a demo</button>
+      </div>
+    </div>
+
+    <!--FORMULÄR-->
+
+    <div class="main">
+      <div class="form-container">
+        <form
+          action="https://httpbin.org/anything"
+          method="POST"
+          class="demo-form"
+        >
+          <h1 class="form-headline">
+            Tell us about yourself so we can show you a demo on the first call
+          </h1>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your work email *"
+            required
+          />
+
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="First name *"
+            required
+          />
+
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Last name *"
+            required
+          />
+
+          <input
+            type="text"
+            name="companyname"
+            id="companyname"
+            placeholder="Company name *"
+            required
+          />
+
+          <span>Company size *</span>
+          <label for="1-20">1-20</label>
+          <input
+            type="radio"
+            value="1-20"
+            name="companysize"
+            id="companysize1-20"
+          />
+
+          <label for="21-50">21-50</label>
+          <input
+            type="radio"
+            value="21-50"
+            name="companysize"
+            id="companysize21-50"
+          />
+
+          <label for="51-200">51-200</label>
+          <input
+            type="radio"
+            value="51-200"
+            name="companysize"
+            id="companysize51-200"
+          />
+
+          <label for="201-1000">201-1000</label>
+          <input
+            type="radio"
+            value="201-1000"
+            name="companysize"
+            id="companysize201-1000"
+          />
+
+          <label for="1000+">1000+</label>
+          <input
+            type="radio"
+            value="1000+"
+            name="companysize"
+            id="companysize1000+"
+          />
+
+          <label for="producttours">Products tours</label>
+          <input
+            type="checkbox"
+            value="Product tours"
+            name="whatareyoulookingfor"
+            id="producttours"
+          />
+
+          <label for="areliabledemoenvironment"
+            >A reliable demo environment</label
+          >
+          <input
+            type="checkbox"
+            value="A reliable demo environment"
+            name="whatareyoulookingfor"
+            id="areliabledemoenvironment"
+          />
+
+          <label for="customizedlivedemos">Customized live demos</label>
+          <input
+            type="checkbox"
+            value="Customized live demos"
+            name="whatareyoulookingfor"
+            id="customizedlivedemos"
+          />
+
+          <label for="demoamobileapp">NEW - Demo a mobile app</label>
+          <input
+            type="checkbox"
+            value="NEW - Demo a mobile app"
+            name="whatareyoulookingfor"
+            id="demoamobileapp"
+          />
+
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Choose a password *"
+            required
+          />
+          <input type="submit" name="submit" id="submit" value="Get a demo" />
+        </form>
+        <img src="assets/signup-form-asset.svg" alt="" class="form-image" />
+      </div>
+    </div>
+    <div class="banner">
+      <h3 class="banner-headline">
+        Effortless Mobile App Demos with Demostack: No Phone Needed!
+      </h3>
+      <button class="banner-CTA-button">Learn more!</button>
+    </div>
+  </body>
+</html>
