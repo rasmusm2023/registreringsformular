@@ -117,7 +117,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #ffd5e1;
   height: auto;
-  width: 1200px;
+  width: 1000px;
   border-radius: 15px;
   border: 1px solid #252525;
   box-shadow: 2px 2px 10px 1px #7d7d7d;
@@ -140,13 +140,13 @@ body {
 
 .demo-form {
   display: grid;
-  grid-column: 1/4;
+  grid-column: 1/2;
+  grid-template-columns: 1fr 1fr;
 }
 
 input {
   font-family: Lexend;
   font-weight: 200;
-  margin-top: 10px;
   padding: 15px;
   border-radius: 20px;
   border: none;
@@ -161,7 +161,7 @@ input:focus {
   outline: 3px rgb(255, 255, 255) solid;
 }
 
-input :not(:focus) {
+input:not(:focus) {
   outline: none;
   transition: 0.3s;
 }
@@ -171,6 +171,7 @@ span {
   font-weight: 600;
   color: #252525;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 input[name="email"] {
@@ -201,7 +202,6 @@ input[name="password"] {
 input[name="companysize"] {
   font-size: 1.2rem;
   grid-row: span 2;
-  text-align: center;
 }
 
 input[name="whatareyoulookingfor"] {
@@ -239,13 +239,80 @@ input[type="submit"]:not(:hover) {
 
 input[type="checkbox"] {
   border-radius: 0px;
+  outline: none;
 }
 
 input[type="radio"] {
   border-radius: 20px;
+  outline: none;
+}
+
+.radio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+  grid-column: span 2;
+}
+
+.radio-buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.radio-buttons input[type="radio"] {
+  margin: 0;
+}
+
+.radio-buttons label {
+  margin-left: 5px; /* Adjust the margin to your preferred spacing */
+}
+
+/* .checkboxes {
+  display: grid;
+  grid-template-areas:
+    "producttours areliabledemoenvironment"
+    "customizedlivedemos demoamobileapp";
+
+  grid-template-columns: 1fr 8fr;
+  text-align: left;
+} */
+
+.checkboxes {
+  grid-column: span 1;
+}
+
+.checkbox-label {
+  margin-top: 5px;
 }
 
 .banner {
   background-color: rgb(0, 93, 229);
   position: sticky;
+  height: 10vh;
+  display: grid;
+  place-content: center;
+  grid-column: 1fr 1fr;
+  grid-template-areas: "banner-headline banner-CTA-button";
+}
+
+.banner-headline {
+  color: aliceblue;
+  margin-right: 50px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.banner-CTA-button {
+  padding: 10px 20px 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: aliceblue;
+  color: #252525;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
 }
